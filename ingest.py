@@ -28,7 +28,7 @@ with open(OUT_FILE,"w", encoding = "UTF-8") as out_file:
                     _index += 1
                     item = str(item)
                     if _index == header_count:
-                        out_file.write(f"{item.strip()},\n")
+                        out_file.write(f"{item.strip()}\n")
                         _index = 0
                     else:
                         out_file.write(f"{item.strip()},")
